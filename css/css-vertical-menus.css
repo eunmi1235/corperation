@@ -1,0 +1,54 @@
+
+/* Menu 4 starts here */
+#menu4 {
+width: 182px;
+float:left;
+height: 320px;
+margin: 0 20px;}
+
+#menu4 ul
+{
+font-family:'Times New Roman',sans-serif;
+list-style-type:none;
+margin:0;
+padding:0;
+}
+#menu4 li
+{
+display: inline;
+/* for IE5 and IE6 */
+margin:0px 0px 2px 0px;
+}
+
+#menu4 a
+{
+color: #333;
+text-decoration: none;
+font-size: 18px;
+display: block;
+padding: 3px;
+width: 182px;
+background-color: #fef7f7;
+border: 1px dotted #fef7f7;
+margin:0px 0px 2px 0px;
+}
+
+#menu4 a:link, #menu4 a:visited
+{
+color: #333;
+text-decoration: none;
+}
+
+#menu4 a:hover
+{
+background-color: #fdd5aa ;
+color: #333;
+}
+
+#menu4 li a#current
+{
+border: 1px solid #fbcbcd;
+background: #fbcbcd ;
+color: #333;
+}
+/* Menu 4 ends here */
