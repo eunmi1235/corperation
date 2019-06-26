@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible"  content="IE=edge, chrome=1">
+  <link rel="stylesheet" type="text/css" href="css/corperation.css" />
+ <script src="http://code.jquery.com/jquery.js"></script>
+	
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/skdslider.min.js"></script>
+<link href="css/skdslider.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/search-form.css" />
+<link href="css/jquery.btnswitch.css" / rel="stylesheet" type="text/css">
+	
+<!-- 슬라이드 -->
+	<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#demo1').skdslider({
+          slideSelector: '.slide',
+          delay:5000,
+          animationSpeed:2000,
+          showNextPrev:true,
+          showPlayButton:true,
+          autoSlide:true,
+          animationType:'fading'
+        });
+    });
+</script>
+
+<title>기업그룹 EM Corperation</title>
+	</head>
+
+<body class="cors">
+	<wrap>
+<!--top-->
+<div style="float:left; width:100%; height:65px; background:#00174c; repeat-x bottom; position:relative; border-bottom: 1px solid #00174c;" > <!-- 마우스 오버시 메뉴옆에 그림이 뜸 -->
+  <div class="gnb">
+    <h1 style="float:left;">
+      <a href="corperation.html"><img src="image/em_logo.png" style="margin-top: 19px;" alt="로고" /></a>
+    </h1>
+    <ul style="">
+      <a href="corperation_sub.html"><li  alt="대메뉴1">회사소개</li></a>
+     <a href="#"><li alt="대메뉴3">사업분야</li></a>
+      <a href="#"><li alt="대메뉴4">홍보센터</li></a>
+     <a href="#"><li alt="대메뉴6">고객센터</li></a>
+	<li id="demo5"></li>	  
+	    <li class="container" style="margin-right: 0;">
+		<form onsubmit="submitFn(this, event);">
+            <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="검색어를 입력하세요." />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+                <div class="result-container">
+
+                </div>
+            </div>
+            </form>
+        </li>
+      </ul>	
+  </div>
+
+	
+	
+  <!--서브메뉴-->
+  <div class="snb">
+    <div style="width:1000px; height:260px; margin:0 auto;">
+      <ul style="float:left; width:700px; height:260px; margin:20px 0 0 253px; padding:0; list-style:none;  text-align:center; font-size: 16px; text-align: center; font-weight: 600;">
+        <li style="float:left; width:105px; height:290px;">
+          <ul style="width:105px; margin:0; padding:0; list-style:none;">
+			  <a href="corperation_sub.html"><li style="margin:0 0 23px;">CEO인사말</li></a>
+           <a href="#"> <li style="margin:0 0 23px;">회사연혁</li></a>
+            <a href="#"><li style="margin:0 0 23px;">사회공헌활동</li></a>
+            <a href="#"><li style="margin:0 0 23px;">찾아오시는 길</li></a>
+            <a href="#"><li style="margin:0 0 23px; width:150px; margin-left: -25px;">해외지사/국내지점</li></a>
+			  <a href="#"><li style="margin:0 0 0px;">그룹사 현황</li></a>
+          </ul>
+        </li>
+        <li style="float:left; width:105px; height:178px; margin-left: 28px;">
+          <ul style="width:105px; margin:0 10px; padding:0; list-style:none; ">
+            <li style="margin:0 0 23px;"><a href="#">석유화학</a></li>
+            <li style="margin:0 0 23px;"><a href="#">해운사업</a></li>
+            <li style="margin:0 0 23px;"><a href="#">건설정보화</a></li>
+            <li style="margin:0 0 0px;"><a href="#">IT서비스</a></li>
+           
+          </ul>
+        </li>
+      
+        <li style="float:left; width:105px; height:178px; margin-left: 20px;">
+          <ul style="width:105px; margin:0 22px; padding:0; list-style:none; ">
+            <li style="margin:0 0 23px;"><a href="#">회사소식</a></li>
+            <li style="margin:0 0 23px;"><a href="#">C I 소개</a></li>
+            <li style="margin:0 0 23px;"><a href="#">홍보영상</a></li>
+            <li style="margin:0 0 0px;"><a href="index.html">포트폴리오</a></li>
+          </ul>
+        </li>
+      
+        <li style="float:left; width:105px; height:178px; margin-left: 52px;">
+          <ul style="width:120px; margin:0; padding:0; list-style:none;">
+            <li style="margin:0 0 23px;"><a href="#">일반문의</a></li>
+            <li style="margin:0 0 23px;"><a href="#">사이버신문고</a></li>
+            <li style="margin:0 0 23px;"><a href="#">전자결제시스템</a></li>
+            <li style="margin:0 0 0px;"><a href="#">협력업체지원</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+  </div>
+	</wrap>
+    </body>   
+
+	 <!--서브메뉴-->
+<wrap><!-- 슬라이드 -->
+<style type="text/css">
+body.main { margin:0; padding:0;}
+  .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
+  .option-table td{ border-bottom:1px solid #eeeeee;}
+</style>
+    <body class="main">
+ <div id="demo1">
+      <div class="slide">
+        <img src="image/em_1.jpg">
+        <!--Slider Description example-->
+         <div class="slide-desc">
+            <h2>About EM CORPORATION</h2>
+            <p>이엠코퍼레이션은 해운사업, 건설, 석유화학, IT서비스 수행하는<br/>
+				전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다.</p>
+  <a href="corperation_sub.html">
+  <div class='box bar'>
+    VIEW
+  </div>
+ </a>
+        </div>
+		  		
+     </div>
+	 
+    <div class="slide">
+       <img src="image/em_2.jpg">
+		 <div class="slide-desc">
+            <h2>About EM CORPORATION</h2>
+            <p>이엠코퍼레이션은 해운사업, 건설, 석유화학, IT서비스 수행하는<br/>
+				전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다.
+	  <a href="corperation_sub.html">
+  <div class='box bar'>
+    VIEW
+  </div>
+				</a>
+        </div>
+      </div>
+	
+	 
+	   <div class="slide">
+     <img src="image/em_4.jpg">
+		    <div class="slide-desc">
+            <h2>About EM CORPORATION</h2>
+            <p>이엠코퍼레이션은 해운사업, 건설, 석유화학, IT서비스 수행하는<br /> 전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다.</p>
+	  <a href="corperation_sub.html">
+  <div class='box bar'>
+    VIEW
+  </div>
+				</a>
+        </div>
+    </div>
+		
+	
+   <div class="slide">
+     <img src="image/em_3.jpg">
+	    <div class="slide-desc">
+            <h2>About EM CORPORATION</h2>
+            <p>이엠코퍼레이션은 해운사업, 건설, 석유화학, IT서비스 수행하는<br/>
+				전문기업으로 지속적인 성장과 차별화 된 고객가치를 실현하고 있습니다.</p>
+			  <a href="corperation_sub.html">
+  <div class='box bar'>
+    VIEW
+  </div>
+				</a>
+        </div>
+  </div>
+</div>
+    </body>
+    </wrap>
+	
+	<div class="clear"></div>
+
+    
+<body style="min-width: 1000px;">
+<wrap>	
+		
+		<div id="contents">
+		<div id="g">
+	   <ul>
+<a href="corperation_sub.html">
+  <li class='box1 curmudgeon'>
+    회사소개
+  </li>
+</a>
+		   <li style="font-size: 25px; margin-top: 18px;">|</li>
+		   <a style="cursor: pointer;">
+  <li class='box1 curmudgeon'>
+    고객센터
+  </li>
+</a>
+		   <li style="font-size: 25px; margin-top: 18px;">|</li>
+		   <a style="cursor: pointer;">
+  <li class='box1 curmudgeon'>
+    인재채용
+  </li>
+</a>
+</ul>	
+</div>
+		
+		</div>
+		
+<div class="clear"></div>
+
+			<div id="search">
+				
+				<div class="ss">
+					
+				<div class="s1"> 
+		    <ul class="right">
+				<li style="width: 110px; height: 28px; border: 2px solid #666666; text-align: center; padding-top: 10px; background: #fff; font-size: 15px;">
+					<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"href="javascript:void(0)" style=" margin-top: 10px;">검색조건 |<img src="image/bottom.png" style="margin-left: 6px; z-index:999;"></a><div style="display: none;">
+					
+					<ul class="e" style="margin-top: 5px;">
+
+						<li style="width: 110px; height: 30px; border-left: 2px solid #666666; border-right: 2px solid #666666;  text-align: center; padding-top: 10px; margin-left: -2px; display: inline-block; background-color: #fff; z-index: 9999; cursor: pointer;">제목</li>
+						<li style="width: 110px; height: 30px; border-left: 2px solid #666666; border-right: 2px solid #666666;  text-align: center; padding-top: 10px; margin-left: -2px; display: inline-block; background-color: #fff; border-bottom: 2px solid #666666; z-index: 9999; cursor: pointer;">내용</li>
+					
+				</ul>
+					</div>
+				</li>
+					</ul>
+			</div>
+	
+					<div class="s2">
+					<ul>
+					<li style="background-color: #fff; width: 200px; height: 30px; border: 2px solid #001b5a; padding: 4px 0;"><input type="search" name="search" value="검색어를 입력하세요." onclick="this.value=''"  style=" height: 37px; width: 200px; margin-top:-3px; font-size: 15px; text-align: center;"></li>
+					<li style="background-color: #001b5a; width: 50px; height: 28px; padding-top: 10px; border: 2px solid #001b5a; color: #fff; text-align: center; cursor: pointer;">검색</li>
+						
+					</ul>
+					
+				</div>
+				</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+			<div class="table">
+             <ul>               
+                <li style="width: 323px; height: 50px; background: #0e7acd; color: #fff; text-align: center; padding: 120px 0 100px 0; font-weight: 600; line-height: 25px;">EM 코퍼레이션<br> 포트폴리오</li><li style="font-size: 15px; width: 323px; height: 5px; background: #0e7acd; color: #fff; text-align: center; padding: 10px 0 20px 0; border-top: 1px solid #fff;"><span class="ww">2018.03.05 MORE+</span></li>
+                </ul>
+        <ul>
+            <li class="ter2" style="line-height: 25px;">EM코퍼레이션 ITC부문 영상정보<br>
+처리기기설치·운영방침 개정 공지</li>
+            <li class="ter22"><span class="ww">2018.03.08 MORE+</span></li>
+                </ul>
+                
+                     <ul>
+            <li class="ter3"><img src="image/cor.JPG" width="321px;" height="auto;"><br>
+<span style="line-height: 50px;">EM그룹, 남산 정화 활동 실시</span></li>
+            <li class="ter33"><span class="ww">2018.04.12 MORE+</span></li>
+                </ul>
+                
+                   <ul style="clear: both;">               
+                <li style="width: 323px; height: 50px; background: #0e811e; color: #fff; text-align: center; padding: 120px 0 100px 0; font-weight: 600; line-height: 25px;">‘윤리경영 캠페인’ 일환으로 명절선물<br> 
+안받기 캠페인 안내</li><li style="font-size: 15px; width: 323px; height: 5px; background: #0e811e; color: #fff; text-align: center; padding: 10px 0 20px 0; border-top: 1px solid #fff;"><span class="ww">2018.04.14 MORE+</span></li>
+                </ul>
+                
+                <ul>
+            <li class="ter3" style="margin: 0 12px;"><img src="image/cor2.JPG" width="322px;" height="auto;" style="margin-left: -1px;"><br>
+<span style="line-height: 40px;">EM그룹 직원가족 미술관 초청행사 실시</span></li>
+            <li class="ter33" style="margin: 0 12px;"><span class="ww">2018.05.22 MORE+</span></li>
+                </ul>
+                
+                        <ul>
+            <li class="ter2" style="margin: 0; line-height: 25px;">벽화그리기 봉사활동 및<br> 마포구청 표창 받아</li>
+            <li class="ter22" style="margin: 0;"><span class="ww">2018.04.28 MORE+</span></li>
+                </ul>
+                
+                  <ul style="clear: both; margin: 0;">
+            <li class="ter2" style="margin: 0; line-height: 25px;">EM코퍼레이션 개인정보<br> 처리방침 개정 공지</li>
+            <li class="ter22" style="margin: 0; clear: both;"><span class="ww">2018.01.20 MORE+</span></li>
+                </ul>
+                
+            <ul>
+            <li class="ter2" style="line-height: 25px;">폴리이소부텐(PIB) 국내 대리점 모집 안내</li>
+            <li class="ter22"><span class="ww">2018.01.18 MORE+</span></li>
+                </ul>
+                
+                <ul>               
+                <li style="width: 323px; height: 50px; background: #f57300; color: #fff; text-align: center; padding: 120px 0 100px 0; font-weight: 600; line-height: 25px;">개인정보 처리방침 및 영상정보 처리기기<br> 
+설치/운영방침 개정 공지 </li><li style="font-size: 15px; width: 323px; height: 5px; background: #f57300; color: #fff; text-align: center; padding: 10px 0 20px 0; border-top: 1px solid #fff;"><span class="ww">2018.01.18 MORE+</span></li>
+                </ul>
+				</div>
+
+<div class="clear"></div>
+		
+		<div id="table2">
+		<div class="ta2">
+			<ul>
+			
+		<a href="#"><li style="padding-left:0;"><img src="image/em_13.jpg" width="323px;" height="71px;"></li></a>	
+		<a href="#"><li><img src="image/em_15.jpg" width="323px;" height="71px;"></li></a>	
+		<a href="#"><li style="padding-right:0;"><img src="image/em_17.jpg" width="323px;" height="71px;"></li></a>	
+			</ul>
+		</div>
+		</div>
+		
+		<div class="clear"></div>
+
+		
+    
+    <footer>
+    		<div class="second">
+			<ul>
+			<li style="padding-left: 0px;">회사소개</li>
+			<li style="">사업분야</li>
+			<li style="">재무정보</li>
+			<li style="">홍보센터</li>
+			<li style="">인재채용</li>
+			<li style="padding-right: 0px;">고객센터</li>
+			</ul>
+			</div>			
+		
+						
+			<div class="second2">
+				<ul>
+					<li style="padding-left: 0px;">CEO사말<br>
+회사연혁<br>
+사회공헌활동<br>
+찾아오시는 길<br>
+해외지사/국내지점<br>
+그룹사 현황<br>
+					</li>
+					
+					<li STYLE="margin-left: 76PX;">석유화학<br>
+해운사업<br>
+건설정보화<br>
+IT서비스<br></li>
+			
+			<li style="padding-left: 120px;">재무제표<br>
+공시정보<br>
+공정거래자율준수<br></li>
+					
+					<li style="padding-left: 82px;">
+					회사소식<br>
+CI소개<br>
+홍보영상<br>
+포트폴리오
+					
+					</li>
+					
+					<li style="padding-left: 119px;">인재상<br>
+인사제도<br>
+직무소개<br>
+직무 인터뷰<br>
+채용정보<br></li>
+					<li style="padding-left: 114px;">일반문의<br>
+사이버신문고<br>
+전자결제시스템<br>
+협력업체지원<br></li>
+				</ul>
+                </div>		          
+   
+    <div class="clear"></div>        
+        
+        <div class="allfooter">
+        
+            <div class="first">
+		<ul>
+		<li style="margin-left: 0;">개인정보처리방침</li>
+		<li style="font-size: 25px; margin-top: 12px;">·</li>
+		<li>공정거래자율준수</li>	
+		<li style="font-size: 25px; margin-top: 12px;">·</li>
+		<li>영상정보처리기기 설치 운영방침</li>
+		<li style="font-size: 25px; margin-top: 12px;">·</li>
+		<li>찾아오시는 길</li>	
+		<li><img src="image/em_15.png" width="50px;" height="auto;" style="margin-top: -10px;"></li>	
+        <li style="width: 100px; height: 20px; background-color: #898989; padding-top: 7px; text-align: center; margin-top: 12px; color: #fff;">계열사로 바로가기</li>
+    </ul>	
+        </div>
+        
+			<div class="clear"></div>
+
+			
+			<div id="foo">
+			<div class="third">
+			<ul>
+				<li><a href="corperation.html"><img src="image/em_footer.png" width="200px;" height="auto;"></a></li>
+				<li style="margin-left: 10px; line-height: 25px; margin-top: 10px;">(01556) 서울특별시 중구 세종대로 39 EM코퍼레이션 빌딩 1층 ㈜EM코퍼레이션 &nbsp;&nbsp;TEL : 02-1234-5678, 5678&nbsp;&nbsp;  FAX : 02-123-4567 <br>
+                    Copyright(C) 2018 EM CORPORATION. All rights reserved.</li>
+				</ul>
+			</div>
+			</div>
+                    </div>
+      		</footer>
+	<!-- 메뉴 검색 스크립트 -->
+<script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+            value = $(obj).find('.search-input').val().trim();
+
+            _html = "";
+            if(!value.length){
+                _html = "";
+            }
+            else{
+                _html += "<b>" + value + "</b>";
+            }
+
+            $(obj).find('.result-container').html('<span>' + _html + '</span>');
+            $(obj).find('.result-container').fadeIn(100);
+
+            evt.preventDefault();
+        }
+    </script>
+		
+<!-- 메뉴 언어 -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+
+<script src="js/jquery.btnswitch.js"></script>
+<script>
+var newJquery = $.noConflict(true);
+
+
+newJquery ('#demo5').btnSwitch({
+    Theme: 'Swipe'
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	
+<!-- 대메뉴 바-->	
+<script>
+var zoomx = 100;
+ $(document).ready(function() {
+    $(".gnb").hover(
+      function() {
+        $(".snb").stop().slideDown(600);
+      },
+      function() {
+        $(".snb").stop().slideUp(600);
+      }
+    );
+
+    $(".snb").hover(
+      function() {
+        $(".snb").stop().slideDown(600);
+      },
+      function() {
+        $(".snb").stop().slideUp(600);
+      }
+    );
+
+    $(".tabBtn").hover(
+      function() {
+
+        $(this).children(".icon_normal").css("display","none");
+        $(this).children(".icon_over").css("display","block");
+      },
+      function() {
+        $(this).children(".icon_over").css("display","none");
+        $(this).children(".basic").css("display","block");
+      }
+    );
+
+    $(".tabBtn").click(
+      function() {
+
+        $("."+$(this).attr("tarx")).children(".icon_normal").addClass("basic");
+        $("."+$(this).attr("tarx")).children(".icon_over").removeClass("basic");
+        $(this).children(".icon_over").addClass("basic");
+        $(this).children(".icon_normal").removeClass("basic");
+
+        $("."+$(this).attr("tarx")).children(".icon_over").css("display","none");
+        $("."+$(this).attr("tarx")).children(".icon_normal").css("display","none");
+        $("."+$(this).attr("tarx")).children(".basic").css("display","block");
+
+
+        $("."+$(this).attr("tarc")).css("display","none");
+        $("#"+$(this).attr("tar")).css("display","block");
+
+        $("#"+$(this).attr("tarmc")).attr("href", $(this).attr("tarm"));
+
+      }
+    );
+
+//class="tabBtn tabBtngroupA" tar="lastA_1" tarc="lastA_1" tarx="tabBtngroupA"
+  });
+function body_zoomin() {
+  zoomx = zoomx + 10;
+  $("body").css("zoom",zoomx + "%");
+}
+function body_zoomout() {
+  zoomx = zoomx - 10;
+  $("body").css("zoom",zoomx + "%");
+}
+function body_zoomdef() {
+  zoomx = 100;
+  $("body").css("zoom",zoomx + "%");
+}
+function newWin(url,w,h) {
+window.open
+(url,'new_win','width='+w+',height='+h+',toolbars=no,menubars=no,scrollbars=auto');
+}
+	</script></wrap></body></html>
+
+
+
