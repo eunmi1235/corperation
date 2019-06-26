@@ -19,21 +19,20 @@ a:link, a:visited, a:active {color:#fff; text-decoration:none;}
 a:hover {color:#c7b299; text-decoration:none;}
 .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
 .option-table td{ border-bottom:1px solid #eeeeee;}
-#contents {width: 450px; margin: 0 auto; color: #333; clear: both; }
-#contents a {color: #333;}
-#g {width:500px; color: #333; margin: 0 auto; font-size: 20px; font-weight: 600; clear: both; margin-top: 30px;}
-#g ul li {float: left; margin: 0 auto; padding: 0 20px;}
-#table {clear: both; width: 1000px; margin: 0 auto; padding-top: 40px; }
+#main {margin: 0; padding: 0; top: 0; clear: both; height: 550px; width: 100%; background: url(image/cor_mock1.jpg) no-repeat center center; background-size: 100%;}
+#zz1 {width: 1000px; margin: 0 auto; font-size: 15px; margin-top: 30px; clear: both;}
+.location {clear: both; width: 1000px; float: right;}
+.location ul li {float: right; padding-left: 10px; cursor: pointer;}
+#zz2 {width: 1000px; margin: 0 auto; text-align: center; margin-top: 60px; clear: both;}
+#bb {border-bottom: 1px solid #333; margin: 50px 0; clear: both;}
+#zz3 {width: 1000px; text-align: center; margin: 0 auto; font-weight: 600; clear: both;}
+.mme {width: 1000px; margin: 0 auto; text-align: center; clear: both; margin-left: 50px;}
+.mme ul li {margin: 0 auto; float: left; padding: 0 10px; text-align: center;}
+#zz4 {width: 1000px; margin: 0 auto; margin-top: 150px; clear: both;}
+.co {background-image: url(image/emsub2.jpg); width:1000px; height: 327px;}
+p.coo {font-size: 30px; font-weight: 700; line-height: 40px; text-align: center; padding-top: 45px; padding-left: 33px;}
 
-#search {width: 1000px; margin: 0 auto; clear: both; color: #333; padding-top: 50px;}
-.s1 {color: #333; float:left;} 
-.s1 a {color: #333;}
-.s1 a:hover {color: #666;}
-.ss {width: 38.5%; float: right; margin: 0 auto; padding-right: 7px;}
-.s2 {float: right;}
-.s2 ul li {float: left;}
-#table2 {clear: both; width: 1000px; margin: 0 auto;}
-.ta2 ul li {float: left; padding: 20px 6px 130px; cursor: pointer;}
+#zz5{width: 1000px; margin: 0 auto; text-align: justify; margin-top: 40px;}
 
 footer {top: 0; bottom: 0; width: 100%; background-color:#0e7acd; margin: 0 auto;}
 .second {width: 1000px; margin: 0 auto; font-size: 13px; clear: both; margin-top: 20px; color: #fff; }
@@ -45,25 +44,22 @@ footer {top: 0; bottom: 0; width: 100%; background-color:#0e7acd; margin: 0 auto
 .allfooter {width: 100%; margin: 0 auto; background: #00174c; color: #fff; font-size: 12px;}
 #foo {width: 1000px; margin: 0 auto; text-align: center;}
 ul li {list-style: none;}
-.table {width: 1000px; margin: 0 auto; margin-top: 90px;}
-.table ul {float: left; margin-bottom: 10px;}
-li.ter2 {width: 321px; height: 50px; border: 1px solid #919191; text-align: center; padding: 120px 0 100px 0; font-weight: 600; margin: 0 12px;}
-li.ter22 {font-size: 13px; width: 321px; height: 5px; text-align: center; padding: 9px 0 18px 0; margin: 0 12px; border: 1px solid #919191; border-top: 0;}
-span.ww {font-size: 13px; word-spacing: 120px; cursor: pointer;}
-li.ter3 {width: 321px; height: 50px; border: 1px solid #919191; text-align: center; padding: 0px 0 220px 0; font-weight: 600;}
-li.ter33 {font-size: 13px; width: 321px; height: 5px; text-align: center; padding: 9px 0 18px 0; border: 1px solid #919191; border-top: 0;}
+
+
 
 /* 대메뉴 */
 .gnb ul li {margin-top: 24px; float:left; margin-left: 75px; padding:0; list-style:none; font-weight: 600;}
 .gnb {width: 1000px; margin: 0 auto; z-index: 999;}
-/* 대메뉴의 서브 */
-.snb {display:none; width:100%; height:260px; background-color: rgba(0, 23, 76, 0.7); position:relative; z-index: 99; margin: 15px auto; margin-top: 50px; cursor: pointer;}
-/* 회사소개 메뉴*/
 
+/* 대메뉴의 서브 */
+.snb {display:none; width:100%; height:260px; background-color: rgba(0, 23, 76, 0.7); position:relative; z-index: 99; margin: 15px auto; margin-top: 50px;}
+
+
+/* 회사소개 메뉴*/
 a {text-decoration: none;
 }
 
-.box1 {
+.box2 {
   position:relative;
   vertical-align: middle;
   color: #333;
@@ -72,19 +68,18 @@ a {text-decoration: none;
   line-height: 60px;
   text-align: center;
   transition: 0.5s;
-  padding: 0 20px;
+  padding: 0 5PX;
   cursor: pointer;
   border: 2px solid #fff;
   -webkit-transition:0.5s;
-  -ms-transition:0.5s;
 }
 
-.box1:hover {
+.box2:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #333;
 }
 
-.box1::before, .box1::after {
+.box2::before, .box2::after {
   width: 100%;
   height:100%;
   z-index:33;
@@ -111,22 +106,9 @@ a {text-decoration: none;
   -ms-transform-origin: 50% 50%;
 }
 
-.box1:hover::after, .box1:hover::before {
+.box2:hover::after, .box2:hover::before {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
 }
 
-#news-container
-{
-	width: 400px; 
-	margin: auto;
-	margin-top: 30px;
-	border: 5px solid #333333;
-}
-
-#news-container ul li div
-{
-	border: 1px solid #aaaaaa;
-	background: #ffffff;
-}
 /* 끝 */
