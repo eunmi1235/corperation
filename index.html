@@ -2,22 +2,52 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-	 <meta http-equiv="X-UA-Compatible"  content="IE=edge, chrome=1">
-  <link rel="stylesheet" type="text/css" href="css/corperation.css" />
-  <title>기업그룹 EM Corperation</title>
- <script src="http://code.jquery.com/jquery.js"></script>	
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/skdslider.min.js"></script>
-<link href="css/skdslider.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/search-form.css" />
-<link href="css/jquery.btnswitch.css" / rel="stylesheet" type="text/css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="eml's 포트폴리오">
+  <meta name="google" content="eml's 포트폴리오" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="description" content="eml's 포트폴리오">
+  <meta name="keywords" content="eml's 포트폴리오">
+  <meta name="author" content="eml's 포트폴리오">
+  <meta name="Copyright" content="eml's 포트폴리오"/>  
+  <meta name="Classification" content="포트폴리오" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eunmi1235.github.io/corperation/">
+  <meta property="og:title" content="eml's portfolio, 포트폴리오">
+  <meta property="og:description" content="eml's 포트폴리오">
+  <meta property="og:image" content="./image/em_1.jpg"/>    
+  <meta property="al:web:url" content="https://eunmi1235.github.io/corperation/">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./images/favic/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="application-name" content="eml's 포트폴리오" /> 
+  <!— Windows 8.1 + IE11 and above —>
+  <meta name="msapplication-config" content="/webapp/browserconfig.xml" />
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">  
 
-	</head>
+  <title>기업그룹 EM Corperation</title> 
+  <link href="./css/corperation.css" rel="stylesheet" type="text/css" /> 
+  <link href="./css/skdslider.css" rel="stylesheet" type="text/css" />  
+  <link href="./css/search-form.css" rel="stylesheet" type="text/css" />
+  <link href="./css/jquery.btnswitch.css" rel="stylesheet" type="text/css"> 
+  <link href="./image/favicon/favicon.ico" rel="icon" type="image/x-icon" >
+  <link rel="manifest" href="./image/favicon/manifest.json" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png"/> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  
+  <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script> 
+  <script src="./js/jquery.btnswitch.js" type="text/javascript"></script> 
+  <script src="./js/prefixfree.jquery.js" type="text/javascript"></script>
+  <script src="./js/skdslider.js" type="text/javascript"></script> 
+  <script src="./js/common.js" type="text/javascript"></script>    
+</head>
 
 <body class="cors">
 	<wrap>
-<!--top-->
-<div style="float:left; width:100%; height:65px; background:#00174c; repeat-x bottom; position:relative; border-bottom: 1px solid #00174c;" > <!-- 마우스 오버시 메뉴옆에 그림이 뜸 -->
+<!--top--> 
+<div style="float:left; width:100%; height:65px; background:#00174c; position:relative; border-bottom: 1px solid #00174c;" > 마우스 오버시 메뉴옆에 그림이 뜸
   <div class="gnb">
     <h1 style="float:left;">
       <a href="corperation.html"><img src="image/em_logo.png" style="margin-top: 19px;" alt="로고" /></a>
@@ -219,7 +249,7 @@ body.main { margin:0; padding:0;}
 					</div>
 				</li>
 					</ul>
-			</div>
+			</div> 
 	
 					<div class="s2">
 					<ul>
@@ -382,160 +412,10 @@ CI소개<br>
 			</div>
 			</div>
                     </div>
-      		</footer>
-      		<!-- 슬라이드 -->
-	<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery('#demo1').skdslider({
-          slideSelector: '.slide',
-          delay:5000,
-          animationSpeed:2000,
-          showNextPrev:true,
-          showPlayButton:true,
-          autoSlide:true,
-          animationType:'fading'
-        });
-    });
-</script>
-	<!-- 메뉴 검색 스크립트 -->
-<script type="text/javascript">
-        function searchToggle(obj, evt){
-            var container = $(obj).closest('.search-wrapper');
-
-            if(!container.hasClass('active')){
-                  container.addClass('active');
-                  evt.preventDefault();
-            }
-            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-                  container.removeClass('active');
-                  // clear input
-                  container.find('.search-input').val('');
-                  // clear and hide result container when we press close
-                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
-            }
-        }
-
-        function submitFn(obj, evt){
-            value = $(obj).find('.search-input').val().trim();
-
-            _html = "";
-            if(!value.length){
-                _html = "";
-            }
-            else{
-                _html += "<b>" + value + "</b>";
-            }
-
-            $(obj).find('.result-container').html('<span>' + _html + '</span>');
-            $(obj).find('.result-container').fadeIn(100);
-
-            evt.preventDefault();
-        }
-    </script>
-		
-<!-- 메뉴 언어 -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-
-
-<script src="js/jquery.btnswitch.js"></script>
-<script>
-var newJquery = $.noConflict(true);
-
-
-newJquery ('#demo5').btnSwitch({
-    Theme: 'Swipe'
-});
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-	
-<!-- 대메뉴 바-->	
-<script>
-var zoomx = 100;
- $(document).ready(function() {
-    $(".gnb").hover(
-      function() {
-        $(".snb").stop().slideDown(600);
-      },
-      function() {
-        $(".snb").stop().slideUp(600);
-      }
-    );
-
-    $(".snb").hover(
-      function() {
-        $(".snb").stop().slideDown(600);
-      },
-      function() {
-        $(".snb").stop().slideUp(600);
-      }
-    );
-
-    $(".tabBtn").hover(
-      function() {
-
-        $(this).children(".icon_normal").css("display","none");
-        $(this).children(".icon_over").css("display","block");
-      },
-      function() {
-        $(this).children(".icon_over").css("display","none");
-        $(this).children(".basic").css("display","block");
-      }
-    );
-
-    $(".tabBtn").click(
-      function() {
-
-        $("."+$(this).attr("tarx")).children(".icon_normal").addClass("basic");
-        $("."+$(this).attr("tarx")).children(".icon_over").removeClass("basic");
-        $(this).children(".icon_over").addClass("basic");
-        $(this).children(".icon_normal").removeClass("basic");
-
-        $("."+$(this).attr("tarx")).children(".icon_over").css("display","none");
-        $("."+$(this).attr("tarx")).children(".icon_normal").css("display","none");
-        $("."+$(this).attr("tarx")).children(".basic").css("display","block");
-
-
-        $("."+$(this).attr("tarc")).css("display","none");
-        $("#"+$(this).attr("tar")).css("display","block");
-
-        $("#"+$(this).attr("tarmc")).attr("href", $(this).attr("tarm"));
-
-      }
-    );
-
-//class="tabBtn tabBtngroupA" tar="lastA_1" tarc="lastA_1" tarx="tabBtngroupA"
-  });
-function body_zoomin() {
-  zoomx = zoomx + 10;
-  $("body").css("zoom",zoomx + "%");
-}
-function body_zoomout() {
-  zoomx = zoomx - 10;
-  $("body").css("zoom",zoomx + "%");
-}
-function body_zoomdef() {
-  zoomx = 100;
-  $("body").css("zoom",zoomx + "%");
-}
-function newWin(url,w,h) {
-window.open
-(url,'new_win','width='+w+',height='+h+',toolbars=no,menubars=no,scrollbars=auto');
-}
-	</script></wrap></body></html>
+  </footer> 
+</wrap>
+</body>
+</html> 
 
 
 
